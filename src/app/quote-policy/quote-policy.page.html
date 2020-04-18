@@ -1,0 +1,108 @@
+<ion-header>
+  <ion-toolbar>
+    <div>
+      <ion-title ><ion-icon (click)="goBack()" style="font-size: 34px;vertical-align: middle;" name="arrow-round-back" ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>  Cotizar de Poliza</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Nombre completo</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Telefono</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Curp</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Calle y Numero</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Colonia</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Municipio</ion-label>
+        <ion-select>
+          <ion-select-option value="nes">Apodaca</ion-select-option>
+          <ion-select-option value="n64">Monterrey</ion-select-option>
+          <ion-select-option value="ps">Escobedo</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>C.P</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+        <ion-label>País</ion-label>
+        <ion-select>
+          <ion-select-option value="nes">México</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-title>
+      Informacion del vehiculo
+    </ion-title>
+
+
+    <ion-item>
+        <ion-label>Tipo</ion-label>
+        <ion-select>
+          <ion-select-option value="nes">Sedan</ion-select-option>
+          <ion-select-option value="n64">HatchBack</ion-select-option>
+          <ion-select-option value="ps">Camioneta</ion-select-option>
+          <ion-select-option value="genesis">Camion</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Marca</ion-label>
+        <ion-select>
+          <ion-select-option value="nes">Chevrolet</ion-select-option>
+          <ion-select-option value="n64">Ford</ion-select-option>
+          <ion-select-option value="ps">Peugeot</ion-select-option>
+          <ion-select-option value="genesis">Renault</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Modelo</ion-label>
+        <ion-select>
+          <ion-select-option value="nes">Spark</ion-select-option>
+          <ion-select-option value="n64">Cruze</ion-select-option>
+          <ion-select-option value="ps">Onix</ion-select-option>
+          <ion-select-option value="genesis">Cavalier</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Version</ion-label>
+        <ion-select>
+          <ion-select-option value="nes">LT</ion-select-option>
+          <ion-select-option value="n64">LTZ</ion-select-option>
+          <ion-select-option value="ps">LTZ Premier</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <ion-button block>Cotizar</ion-button >
+  </div>
+
+</ion-content>

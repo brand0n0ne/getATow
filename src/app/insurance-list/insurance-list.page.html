@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div>
+        <!-- Advanced: explicity set the icon for each platform -->
+        <ion-icon style="font-size: 25px; vertical-align: middle;" name="list-box" ios="ios-list-box" md="md-list-box"></ion-icon>
+        <span style="margin-left: 6px;">Lista de polizas</span>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- List of Text Items -->
+<ion-list>
+    <div style="width: 100%;text-align: center;">
+      <ion-button (click)="quotePolicy()"  expand="block"><ion-label>Cotizar Poliza   <ion-icon style="font-size: 25px; vertical-align: middle;" name="add-circle" ios="ios-add-circle" md="md-add-circle"></ion-icon></ion-label></ion-button>
+      <ion-button (click)="addPolicy()"  expand="block"><ion-label>Agregar Poliza   <ion-icon style="font-size: 25px; vertical-align: middle;" name="add-circle" ios="ios-add-circle" md="md-add-circle"></ion-icon></ion-label></ion-button>
+    </div>
+  <ion-item *ngFor="let vehicle of listOfVehicles.policies">
+    <ion-label (click)="goToPolicy(vehicle)">{{vehicle.brand}} - {{vehicle.car}}   <ion-icon style="float: right;" name="arrow-forward" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon></ion-label>
+  </ion-item>
+
+
+</ion-list>
+
+
+</ion-content>

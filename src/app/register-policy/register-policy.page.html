@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <div>
+      <ion-title><ion-icon (click)="goBack()" style="font-size: 34px;vertical-align: middle;" name="arrow-round-back" ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>  Registro de Poliza</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="registerForm" (ngSubmit)="submitRegister()">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Nombre completo</ion-label>
+        <ion-input type="text" formControlName="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>Telefono</ion-label>
+        <ion-input type="text" formControlName="phoneNumber"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>Poliza</ion-label>
+        <ion-input type="text" formControlName="policy"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <div padding>
+      <ion-button type="submit"  expand="block">Registrar</ion-button >
+    </div>
+
+  </form>  
+
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Informacion de tu vehiculo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="../../assets/images/car.png" />
+    <ion-card-header>
+      <ion-card-subtitle>{{vehicleInformation.brand}}</ion-card-subtitle>
+      <ion-card-title>{{vehicleInformation.brand}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Version del vehiculo: {{vehicleInformation.version}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Color: {{vehicleInformation.color}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Numero de serie: {{vehicleInformation.VinNum}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Nombre de asegurado: {{vehicleInformation.insuredName}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Valido desde: {{vehicleInformation.goodThrough}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Numero de poliza: {{vehicleInformation.policyNumber}}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

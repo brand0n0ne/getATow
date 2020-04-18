@@ -1,0 +1,25 @@
+
+  {
+        "users":[
+            {
+                "name": "brandon",
+                "email": "test@test.com",
+                "password": "test",
+                "policies": [
+                    {
+                        "brand": "chevrolet",
+                        "car": "Spark",
+                        "type": "Sedan",
+                        "version": "LT Hot",
+                        "color": "Negro", 
+                        "VinNum": "1G1YY24R6957009991",
+                        "insuredName": "Brandon Alexis Peña Ramirez",
+                        "phoneNumber": "8115163966",
+                        "goodThrough": "Jun 2016 - Jun 2020",
+                        "inssuranceType": "Cobertura Amplia",
+                        "policyNumber": 83649373
+                    }
+                ]
+            }
+        ]
+    }
